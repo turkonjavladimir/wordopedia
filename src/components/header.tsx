@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { Book } from "lucide-react";
+import Link from "next/link"
+import { Book } from "lucide-react"
 
-import Search from "@/components/search/Search";
-import { ThemeToggle } from "@/components/theme-toggle";
+import Search from "@/components/search/Search"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 function Header() {
   return (
@@ -22,7 +22,7 @@ function Header() {
       </div>
       <Search />
     </header>
-  );
+  )
 }
 
-export { Header };
+export { Header }
