@@ -5,6 +5,7 @@ import { Inter as FontSans } from "next/font/google"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
+import { Analytics } from "@/components/analytics"
 import { Header } from "@/components/header"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -51,6 +52,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
