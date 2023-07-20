@@ -1,7 +1,7 @@
 import { SiteConfig } from "@/types"
 
 export const siteConfig: SiteConfig = {
-  name: "Wordpoedia",
+  name: "Wordopedia",
   description:
     "Discover the world of words with Wordopedia, your ultimate dictionary lookup app.",
   url: "https://wordopedia.vercel.app/",
