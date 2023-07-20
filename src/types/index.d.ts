@@ -26,6 +26,6 @@ type Word = {
 }
 
 export type APIResponse = {
-  data?: Result[]
+  data?: Word[]
   errors?: ErrorMessage[]
 }
