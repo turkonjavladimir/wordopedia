@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Book } from "lucide-react"
 
-import Search from "@/components/search/Search"
+import Search from "@/components/search"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 function Header() {
