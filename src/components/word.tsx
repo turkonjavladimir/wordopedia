@@ -2,6 +2,7 @@ import { Meaning } from "@/types"
 
 import { Separator } from "@/components/ui/separator"
 
+import AudioPlaybackButton from "./audio-playback-button"
 import SynonymItem from "./synonyn-item"
 
 type WordHeaderProps = {
@@ -18,7 +19,9 @@ const WordHeader = ({ word, phonetic, audioUrl }: WordHeaderProps) => {
           <p className="text-lg text-ring md:text-2xl">{phonetic}</p>
         )}
       </div>
-      {audioUrl && <button>play</button>}
+      {audioUrl && (
+        <AudioPlaybackButton audioUrl={audioUrl} currentWord={word} />
+      )}
     </div>
   )
 }
