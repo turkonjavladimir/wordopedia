@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site"
 import { inconsolata, inter, lora } from "@/lib/font"
 import { cn } from "@/lib/utils"
 import { Analytics } from "@/components/analytics"
+import { FontProvider } from "@/components/font-provider"
 import { Header } from "@/components/header"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -54,11 +55,13 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          {children}
-          <Analytics />
-        </ThemeProvider>
+        <FontProvider>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Header />
+            {children}
+            <Analytics />
+          </ThemeProvider>
+        </FontProvider>
       </body>
     </html>
   )

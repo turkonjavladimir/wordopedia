@@ -50,3 +50,10 @@ export type APIResponse = {
   data?: Word[]
   error?: ErrorMessage
 }
+
+export type FontValue = "font-sans" | "font-serif" | "font-mono"
+
+export type Font = {
+  value: FontValue
+  label: string
+}
