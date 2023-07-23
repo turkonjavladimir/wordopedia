@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Inter as FontSans } from "next/font/google"
 
 import { siteConfig } from "@/config/site"
+import { inconsolata, inter, lora } from "@/lib/font"
 import { cn } from "@/lib/utils"
 import { Analytics } from "@/components/analytics"
 import { Header } from "@/components/header"
@@ -42,7 +43,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${inconsolata.variable} ${lora.variable}`}
+    >
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
