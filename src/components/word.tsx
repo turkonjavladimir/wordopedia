@@ -1,9 +1,6 @@
-import { Meaning } from "@/types"
-
 import { Separator } from "@/components/ui/separator"
 
 import AudioPlaybackButton from "./audio-playback-button"
-import SynonymItem from "./synonyn-item"
 
 type WordHeaderProps = {
   word: string
