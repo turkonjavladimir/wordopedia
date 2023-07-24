@@ -51,8 +51,9 @@ const Search = () => {
               </FormControl>
 
               <Button
-                variant="ghost"
                 size="icon"
+                variant="ghost"
+                aria-label="Search"
                 className={`absolute -top-2 right-0 z-50 rounded-full hover:bg-transparent ${
                   isPending ? "opacity-0" : "opacity-100"
                 }`}
@@ -61,6 +62,7 @@ const Search = () => {
               </Button>
 
               <Loader2
+                aria-label="Loading..."
                 className={`${
                   isPending ? "opacity-100" : "opacity-0"
                 } text-muted-foreground/0.5 stroke-accent-purple absolute right-3 top-1 h-4 w-4 animate-spin stroke-ring`}

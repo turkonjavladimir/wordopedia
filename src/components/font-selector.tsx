@@ -41,7 +41,10 @@ export function FontSelector() {
                 defaultValue={field.value}
               >
                 <FormControl>
-                  <SelectTrigger className="w-[130px] focus-visible:ring-1 focus-visible:ring-offset-0">
+                  <SelectTrigger
+                    className="w-[130px] focus-visible:ring-1 focus-visible:ring-offset-0"
+                    aria-label="Font Selector Button"
+                  >
                     <SelectValue
                       placeholder={generateFontDisplayName(selectedFont)}
                     />
@@ -49,7 +52,11 @@ export function FontSelector() {
                 </FormControl>
                 <SelectContent>
                   {fontOptions.map((option) => (
-                    <SelectItem key={option.value} value={option.value}>
+                    <SelectItem
+                      key={option.value}
+                      value={option.value}
+                      aria-label={option.label}
+                    >
                       {option.label}
                     </SelectItem>
                   ))}

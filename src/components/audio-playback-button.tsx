@@ -24,10 +24,11 @@ const AudioPlaybackButton = ({
   return (
     <>
       <Button
+        size="icon"
+        variant="outline"
+        aria-label={`Play audio for the word ${currentWord}`}
         disabled={!audioUrl}
         onClick={!isPlaying ? handlePlayButtonClick : handlePauseButtonClick}
-        variant="outline"
-        size="icon"
         className="h-12 w-12 rounded-full bg-ring/20 hover:bg-ring/30 md:h-16 md:w-16"
       >
         {isPlaying ? (
