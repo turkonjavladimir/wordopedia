@@ -10,7 +10,7 @@ function Header() {
   return (
     <header className="m-auto max-w-3xl space-y-7 px-6 py-6 lg:px-0">
       <div className="flex justify-between">
-        <Link href="/">
+        <Link href="/" aria-label="Home">
           <Book className="h-10 w-10" />
         </Link>
         <nav className="ml-4 flex items-center">
