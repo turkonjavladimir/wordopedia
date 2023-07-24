@@ -97,17 +97,19 @@ export default async function Home({
 
               <Separator className="my-5" />
               <WordSubContent label="Source">
-                {sourceUrls?.map((source: string, index: number) => (
-                  <a
-                    key={index}
-                    href={source}
-                    target="_blank"
-                    className="flex items-center text-sm text-[#2d2d2d] underline dark:text-white"
-                  >
-                    {source}
-                    <ExternalLink className="ml-2 inline-block h-4 w-4 stroke-[#757575]" />
-                  </a>
-                ))}
+                <div className="space-y-2">
+                  {sourceUrls?.map((source: string, index: number) => (
+                    <a
+                      key={index}
+                      href={source}
+                      target="_blank"
+                      className="flex items-center text-sm text-[#2d2d2d] underline dark:text-white"
+                    >
+                      {source}
+                      <ExternalLink className="ml-2 inline-block h-4 w-4 stroke-[#757575]" />
+                    </a>
+                  ))}
+                </div>
               </WordSubContent>
             </div>
           )
