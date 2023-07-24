@@ -103,10 +103,10 @@ export default async function Home({
                       key={index}
                       href={source}
                       target="_blank"
-                      className="flex items-center text-sm text-[#2d2d2d] underline dark:text-white"
+                      className="flex items-center text-sm underline md:text-lg"
                     >
                       {source}
-                      <ExternalLink className="ml-2 inline-block h-4 w-4 stroke-[#757575]" />
+                      <ExternalLink className="ml-2 inline-block h-4 w-4 stroke-[#757575] md:h-5 md:w-5" />
                     </a>
                   ))}
                 </div>

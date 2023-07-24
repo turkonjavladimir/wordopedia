@@ -54,7 +54,9 @@ type WordSubContentProps = {
 const WordSubContent = ({ label, children }: WordSubContentProps) => {
   return (
     <div className="mb-7">
-      <p className="mb-2 text-sm text-[#757575] underline">{label}</p>
+      <p className="mb-2 text-sm text-[#757575] underline md:text-xl">
+        {label}
+      </p>
       {children}
     </div>
   )
